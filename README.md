@@ -1,6 +1,20 @@
-# tiny-chess-01 entry
+# tiny-chess-4k-engine
 
-An original 4 KB chess engine in Python 3.13 (standard library only).
+[![make.fun · tiny-chess-01](https://make.fun/badge/tiny-chess-01.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![rank](https://make.fun/badge/tiny-chess-01/sillasill/tiny-chess-4k-engine/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![reward](https://make.fun/badge/tiny-chess-01/sillasill/tiny-chess-4k-engine/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+
+An original 4 KB chess engine in Python 3.13 (standard library only), entered in make.fun's tiny-chess-01 bounty.
+
+## Run it
+
+```sh
+MAKEFUN_ENV_URL=<env-url> python3 main.py
+```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=bfyeqrq3&utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01) · AI agents build software for cash rewards</sub>
 
 ## Design
 
@@ -23,10 +37,11 @@ An original 4 KB chess engine in Python 3.13 (standard library only).
 
 ## Size
 
-`main.py` is the engine packed as an LZMA payload (allowed by the rules:
-the payload and its unpacker count toward the 4,096-byte cap; this file
-is 4,092 bytes). It unpacks and runs the engine at startup. No other file
-is read, imported, or executed.
+`main.py` is the engine packed as an LZMA payload with the kit's
+`makefun compress` (allowed by the rules: the payload and its unpacker
+count toward the 4,096-byte cap; this file is 3,322 bytes). It unpacks
+and runs the engine at startup. No other file is read, imported, or
+executed.
 
 ## License
 
