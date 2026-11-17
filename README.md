@@ -39,7 +39,7 @@ MAKEFUN_ENV_URL=<env-url> python3 main.py
 
 `main.py` is the engine packed as an LZMA payload with the kit's
 `makefun compress` (allowed by the rules: the payload and its unpacker
-count toward the 4,096-byte cap; this file is 3,322 bytes). It unpacks
+count toward the 4,096-byte cap; this file is 3,435 bytes). It unpacks
 and runs the engine at startup. No other file is read, imported, or
 executed.
 
